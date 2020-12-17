@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>CV - Dupont Elodie</title>
     <link rel="stylesheet" href="css/style.css">
@@ -8,18 +9,25 @@
   </head>
     <body>
     <nav>
+      <label class="menu-btn" for="checked">
+        <i class="fas fa-2x fa-bars"></i>
+      </label>
+      <input type="checkbox" class="check" id="checked">
       <ul>
         <li>
-          <a href="#">A propos</a>
+          <a href="#apropos">A propos</a>
         </li>
         <li>
-          <a href="#">Formation</a>
+          <a href="#formations">Formation</a>
         </li>
         <li>
-          <a href="#">Compétences</a>
+          <a href="#Compétences">Compétences</a>
         </li>
         <li>
-          <a href="#">Intérêts</a>
+          <a href="#Experience">Experience</a>
+        </li>
+        <li>
+          <a href="#centredinteret">Intérêts</a>
         </li>
         <li>
           <a href="#">Portfolio</a>
@@ -30,76 +38,193 @@
     <div class="header">
       <div class="header-left">
         <img id="ordinateur" src="ordinateur.jpg" alt="ordiateur">
-        <h3>Bonjour,</h3>
-        <h3>attirée par le domaine du digital</h3>
+          <h3>Bonjour, je m'appelle<br><span>Dupont Elodie,</span><br>attirée par le domaine du digital.</h3>
       </div>
-      <div class="header-right">
-        <div class="">
+      <div id="apropos" class="header-right flex">
         <img id="profil" src="imgcv.png" alt="imgcv.png">
-        <h2>Elodie Dupont</h2>
-        <p></p>
-        <!-- <i class="fas fa-house-user"></i> -->
+        <div class="flex contact">
+          <h2>Elodie Dupont</h2>
+          <div class="flex icon">
+              <div class="coordonnées">
+                <!-- <i class="fas fa-house-user"></i> -->
+                <a href="https://goo.gl/maps/vWuoEXrKmAArihRs7"> <i class="fas fa-2x fa-house-user"></i></a><p>59135 Wallers</p>
+              </div>
+              <div class="telephone">
+                <a href="tel:+33648300467"><i class="fas fa-2x fa-mobile-alt"></i></a><p>0648300467</p>
+              </div>
+              <div class="mail">
+                <a href="mailto:dupont_elodie@bbox.fr"><i class="fas fa-2x fa-at"></i></a><p>dupont_elodie@bbox.fr</p>
+              </div>
+          </div>
+          <!-- <div class="btn">
+            <a href="img/cv-elodie-dupont.pdf" target="_blank" class="boutoncv">
+            <span class="text">Text</span>
+            <span class="flip-front">CV</span>
+            <span class="flip-back">Download</span>
+            </a>
+          </div> -->
+        </div>
+
+
+
       </div>
-    <div class="coordonnées">
-      <i class="fas fa-house-user"></i></a>
-      <p>59135 Wallers</p>
     </div>
-      <div class="">
-        <a href="tel:+33648300467"><i class="fas fa-mobile-alt"></i></a>
-      </div>
-      <div class="mail">
-        <a href="mailto:dupont_elodie@bbox.fr"><i class="fas fa-at"></i></a>
-      </div>
-      <div class="btn">
-        <!-- <a href="img/cv.pdf">Mon CV</a> -->
-        <a href="img/cv-elodie-dupont.pdf" target="_blank" class="boutoncv">
-          <span class="text">Text</span>
-          <span class="flip-front">CV</span>
-          <span class="flip-back">Download</span>
-        </a>
-      </div>
   </header>
-      <div class="Experience">
-        <h3>Experience professionnel</h3>
+<main>
+  <section id="Experience">
+    <div>
+      <h3>Experience professionnel</h3>
+      <div class="container">
+        <div class="societe">
+          <h2>Ageval</h2>
+        </div>
+        <div class="txt">
+          <p>Septembre 2020 a se jour</p>
+        </div>
       </div>
-    <div class="">
-      Septembre 2019 a se jour  Ageval
-      Juin 2012 Vendeuse spécialisée en électroménager 	Envie Nord - Raismes
-      Juin 2010
-
-      Mai 2010Préparatrice de commandes 			Sanelec - Trith Saint léger
-      Service expédition réception
-
-      Mars 2010		Employée libre-service			L’Oasis - Wallers
-        		Rayon fruits et légumes, boucherie
-
-      Avril Mai 2009	 	Préparatrice de commandes/magasinier 	SDEZ (Blanchisserie industrielle) - Wallers
-        		Service conditionnement, expédition
-
-      Février 2009		Préparatrice de commandes/ magasinier 	Sanelec - Trith Saint Léger
-        		Service expédition réception
-        		Vente de matériels et équipement électrique
-
-      Juin 2006 	Secrétaire 					Conseil Général - Valenciennes
-          2005		Gestion des collèges – PMI - Ruches Entreprises
+      <div class="container">
+        <div class="societe"><h2>ENVIE</h2></div>
+          <div class="txt">
+          <p>Juin 2010 Vendeuse spécialisée en électroménager Raismes </p>
+        </div>
       </div>
-      <div class="formationsdiplomes">
-        <h3>Formations et Diplômes</h3>
-        2012 			Attestation Vente en Equipements et Biens du Foyer « SIADEP » - Douai
-        2011			Définition de Projet Professionnel - Denain
-        2010 	    Formation « Aide à la mobilité » Projet d’Accès à l’Emploi et Permis « ID FORMATION » - Denain
-        2009			BEP Logistique et commercialisation « TECH 3000 » - Aulnoy Lez valenciennes
-        2007			BEP Vente action Marchande (1er année) Lycée « Dampierre » - Valenciennes
-        2006			BEP Secrétariat (niveau terminal BEP) Lycée « LA SAGESSE » - Valenciennes
+      <div class="container">
+        <div class="societe"><h2>Sanelec</h2></div>
+        <div class="txt">
+          <p>Mai 2010 Préparatrice de commandes	Trith Saint léger Service expédition réception</p>
+        </div>
       </div>
-      <div class="loisirs">
-        <h3>Centre d'interet</h3>
-        Lecture, photographier et mètre en scènes, marche, musique, les animaux
+      <div class="container">
+        <div class="societe"><h2>L'Oasis</h2></div>
+        <div class="txt">
+          <p>Mars 2010 Employée libre-service- Wallers Rayon fruits et légumes, boucherie</p>
+         </div>
+      </div>
+      <div class="container">
+        <div class="societe"><h2>SDEZ</h2></div>
+        <div class="txt">
+          <p>Avril-Mai 2009	Préparatrice de commandes/magasinier (Blanchisserie industrielle)  Wallers-Service conditionnement, expédition</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="societe"><h2>Sanelec</h2></div>
+        <div class="txt">
+          <p>Février 2009	Préparatrice de commandes/ magasinier	Sanelec Trith Saint Léger Service expédition-réception Vente de matériels et équipement électrique</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="societe"><h2>Conseil General</h2></div>
+        <div class="txt">
+          <p>Juin 2005 et 2006 Valenciennes Secrétaire Maison Départementale Gestion des collèges  PMI  Ruches Entreprises</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="formations" class="background">
+    <h3>Formations</h3>
+    <div class="ecoles">
+      <div class="left">
+        <img class="idformation" src="idformation.png" alt="Avatar" class="image">
+      </div>
+      <div class="right">
+        <h3>Définition de Projet Professionnel aide a la mobilité.</h3>
+        <h4><span>Denain 2010 2011</span></h4>
       </div>
 
-  <h3>Competances</h3>
-  typologie du client
-  vente produit et service
-  accueil client
+      <div class="right">
+        <h3>Attestation Vente en Equipements et Biens du Foyer</h3>
+        <h4>Douai 2011</h4>
+        <p>Apprentisage des differentes techniques de vente et produits complementaire, <br>
+          de l'association des couleurs et des textures dans le cadre e la décoration d'interieur.<br>
+          Ainsi que les groupe des produits brun, blanc et gris et l'UX.</p>
+      </div>
+      <div class="left">
+        <img src="siadep.png" alt="Avatar" class="image">
+      </div>
+      <div class="left">
+        <img src="tech3000.png" alt="Avatar" class="image">
+      </div>
+      <div class="right">
+        <h3>BEP logistique et commercialisation</h3>
+        <h4>2011</h4>
+        <p>Apprentisage des gestions de stock ainsi que logiciel de gestions, <br>
+          picking, regroupé et embalé les colis, les modalité des delais de paiments</p>
+      </div>
+      <div class="right">
+        <h3>1er année BEP vente action marchande</h3>
+        <h4>2007</h4>
+        <p>Les differentes techniques de vente</p>
+      </div>
+      <div class="left">
+        <img src="LogoDampierre.png" alt="Avatar" class="image">
+      </div>
+      <div class="left">
+        <img src="logolasagess.png" alt="Avatar" class="image">
+      </div>
+      <div class="right">
+        <h3>BEP Secrétariat (niveau terminal BEP)</h3>
+        <h4>2006 Valenciennes</h4>
+        <p>apprentisage des logiciels ciel gestion conptabilité, word, excel.<br>relance clients </p>
+      </div>
+    </div>
+  </section>
+  <!-- <h3>Centres d'interet</h3> -->
+  <div id="centredinteret">
+    <div class="lecture">
+      <div class="quatrevingt">
+        <img src="img/photopourcv/livreouvert.jpg" alt="bookopen">
+      </div>
+    </div>
+    <div class="photographie">
+      <div class="quatrevingt">
+        <img src="img/photopourcv/casque.jpg" alt="casque">
+      </div>
+    </div>
+    <div class="pierre">
+      <div class="quatrevingt">
+        <img src="img/photopourcv/pierre.JPG"alt="pierre.jpg">
+      </div>
+      <div class="quinze">
+      </div>
+    </div>
+    <div class="rando">
+      <div class="quatrevingt">
+        <img src="img/photopourcv/pissoir.JPG"alt="pissoir.jpg">
+      </div>
+      <div class="quinze">
+      </div>
+    </div>
+  </div>
+  <section id="Competences">
+    <h3>Compétences</h3>
+    <div class="left">
+      <ul>
+        <li>Typologie du client</li>
+        <li>Vente produit et service</li>
+        <li>Accueil client</li>
+      </ul>
+    </div>
+    <div class="right">
+      <img src="word.png" alt="word">
+      <img src="excel.png" alt="excel">
+      <img src="ps.png" alt="ps">
+      <img src="https://img.icons8.com/color/100/000000/html-5.png"/>
+      <img src="css.png" alt="css">
+      <img src="gith.png" alt="github">
+      <img src="https://img.icons8.com/color/100/000000/google-slides.png"/>
+    </div>
+    <p class="clear"></p>
+  </section>
+
+  <div class="portfolio">
+
+  </div>
+
+  </main>
+  <footer class="background">
+    <!-- copyright -->
+
+
+  </footer>
   </body>
 </html>
