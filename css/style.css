@@ -314,6 +314,7 @@ li{
 	box-shadow: 4px 4px 4px -5px #777;
 	margin: auto;
 }
+
 .txt{
 	height: 100%;
 	position: absolute;
@@ -421,6 +422,17 @@ object-fit: cover;
 #casque {
 	width: 100%;
 }
+#flex>div{
+  width: calc(100%/3);
+}
+#flex>div>img{
+  width: 100%;
+  /* height: 100%; */
+}
+#flex{
+display: flex;
+flex-wrap: wrap;
+}
 
 label>i{
 	color: white;
@@ -476,4 +488,222 @@ label>i{
 	#formations img{
 		height: 100px;
 	}
+	.header-left>h3 {
+		position: absolute;
+		top: 50px;
+		font-size: 10%;
+		text-transform: uppercase;
+		color: #464950;
+		font-family: "font-gras";
+		left: 50%;
+		transform: translate(-60%,-60%) rotate(-7deg);
+		width: 100%;
+	}
+	.header-left>span{
+		font-size: 40%;
+
+	}
+
+}
+#portfolio>div{
+
+float: left;
+width: calc(100%/4);
+}
+.quatrevingt{
+filter: brightness(60%);
+transition: 0.5s;
+height: 300px
+}
+.quatrevingt img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.quatrevingt:hover{
+filter: brightness(1);
+}
+
+
+
+
+
+/* modal css */
+/* The Modal (background) */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  color: white;
+}
+
+/* Modal Body */
+.modal-body {
+	padding: 2px 16px;
+	display: flex;
+	justify-content: space-around;
+}
+.modal-body>.gauche, .modal-body>.droite{
+	width: 50%;
+	padding: 20px
+}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+/* modal css fin  */
+
+
+/* css slider into modal */
+/* * Slideshow container */
+
+.modal img{
+	width: 100%;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+	clear: both;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+* {box-sizing:border-box}
+/* fin slider into modal */
+
+.logo{
+	display: flex;
+	justify-content: flex-start;
+}
+.logo>img{
+	width: 50px
+}
+
+.padding{
+	padding: 20px 0
+}
+.modal a{
+	background-color: rgba(253, 193, 188, 0.5);
+	padding:15px 20px;
+	box-shadow: 4px 4px 4px -5px #777;
+	text-align: center;
+	text-decoration: none;
+	display: inherit;
 }
