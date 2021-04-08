@@ -427,7 +427,7 @@ object-fit: cover;
 }
 #flex>div>img{
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
 }
 #flex{
 display: flex;
